@@ -1,1 +1,1 @@
-include ':app', ':dotframe', ':dotutil'
+include ':app', ':dotframe', ':dotutil', ':dotui', ':dotnetwork'
