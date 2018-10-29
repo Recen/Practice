@@ -1,4 +1,4 @@
-package com.recen.learn;
+package com.recen.learn.app;
 
 import com.recen.dotframe.base.CommonApp;
 

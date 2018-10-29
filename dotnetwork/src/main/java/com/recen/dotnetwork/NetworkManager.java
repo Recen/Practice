@@ -14,6 +14,7 @@ public class NetworkManager {
         return Generator.INSTANCE;
     }
 
+
     public NetworkManager() {
         retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
