@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="font_black">#000000</color>
+    <color name="font_white">#ffffff</color>
+    <color name="font_red">#fc2a35</color>
+    <color name="font_grey1">#666666</color>
+    <color name="font_grey2">#dddddd</color>
+    <color name="font_grey3">#a1a1a1</color>
+    <color name="font_green">#71da64</color>
+    <color name="font_yellow">#ffd430</color>
+    <color name="font_blue">#1e9bea</color>
+    <color name="font_orange">#ff840b</color>
+    <color name="font_orange2">#ffac54</color>
+</resources>

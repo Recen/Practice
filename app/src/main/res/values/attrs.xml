@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="titleBar">
+        <attr name="android:title" />
+
+        <attr name="leftButtonImage" format="reference" />
+        <attr name="rightButtonImage" format="reference" />
+        <attr name="rightButtonText" format="string"/>
+        <attr name="leftButtonText" format="string"/>
+        <attr name="titleDrawableRight" format="reference" />
+    </declare-styleable>
+</resources>

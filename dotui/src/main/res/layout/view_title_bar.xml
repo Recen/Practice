@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height">
+
+    <TextView
+        android:id="@+id/btnLeft"
+        android:contentDescription="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center"
+        style="@style/txt6_black24"
+        tools:text="取消"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/txt3_black32"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxWidth="200dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:text="编辑资料"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:contentDescription="确定  "
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        style="@style/txt6_black24"
+        tools:text="完成"/>
+</RelativeLayout>

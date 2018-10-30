@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txt_black">
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+
+    <style name="txt1_black48" parent="txt_black">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt2_black36" parent="txt_black">
+        <item name="android:textSize">@dimen/font_36px</item>
+    </style>
+
+    <style name="txt2_black34" parent="txt_black">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt3_black32" parent="txt_black">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt4_black28" parent="txt_black">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt5_black26" parent="txt_black">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt6_black24" parent="txt_black">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt7_black22" parent="txt_black">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt8_black20" parent="txt_black">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt9_black18" parent="txt_black">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_grey1">
+        <item name="android:textColor">@color/font_grey1</item>
+    </style>
+
+    <style name="txt10_grey48" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt11_grey34" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt12_grey32" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt13_grey28" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt14_grey26" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt15_grey24" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt16_grey22" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt17_grey20" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt18_grey18" parent="txt_grey1">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_grey2">
+        <item name="android:textColor">@color/font_grey2</item>
+    </style>
+
+    <style name="txt19_grey48" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt20_grey34" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt21_grey32" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt22_grey28" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt23_grey26" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt24_grey24" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt25_grey22" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt26_grey20" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt27_grey18" parent="txt_grey2">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_grey3">
+        <item name="android:textColor">@color/font_grey3</item>
+    </style>
+
+    <style name="txt28_grey48" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt29_grey34" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt30_grey32" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt31_grey28" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt32_grey26" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt33_grey24" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt34_grey22" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt35_grey20" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt36_grey18" parent="txt_grey3">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_white">
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="txt37_white48" parent="txt_white">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt36_white36" parent="txt_white">
+        <item name="android:textSize">@dimen/font_36px</item>
+    </style>
+    <style name="txt38_white34" parent="txt_white">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt39_white32" parent="txt_white">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt40_white28" parent="txt_white">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt41_white26" parent="txt_white">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt42_white24" parent="txt_white">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt43_white22" parent="txt_white">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt44_white20" parent="txt_white">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt45_white18" parent="txt_white">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_red">
+        <item name="android:textColor">@color/font_red</item>
+    </style>
+
+    <style name="txt46_red48" parent="txt_red">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt47_red34" parent="txt_red">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt48_red32" parent="txt_red">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt49_red28" parent="txt_red">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt50_red26" parent="txt_red">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt51_red24" parent="txt_red">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt52_red22" parent="txt_red">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt53_red20" parent="txt_red">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt54_red18" parent="txt_red">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_green">
+        <item name="android:textColor">@color/font_green</item>
+    </style>
+
+    <style name="txt55_green48" parent="txt_green">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt56_green34" parent="txt_green">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt57_green32" parent="txt_green">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt58_green28" parent="txt_green">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt59_green26" parent="txt_green">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt60_green24" parent="txt_green">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt61_green22" parent="txt_green">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt62_green20" parent="txt_green">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt63_green18" parent="txt_green">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_yellow">
+        <item name="android:textColor">@color/font_yellow</item>
+    </style>
+
+    <style name="txt64_yellow48" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt65_yellow34" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt66_yellow32" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt67_yellow28" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt68_yellow26" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt69_yellow24" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt70_yellow22" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt71_yellow20" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt72_yellow18" parent="txt_yellow">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt_blue">
+        <item name="android:textColor">@color/font_blue</item>
+    </style>
+
+    <style name="txt73_blue48" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_48px</item>
+    </style>
+
+    <style name="txt74_blue34" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_34px</item>
+    </style>
+
+    <style name="txt75_blue32" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_32px</item>
+    </style>
+
+    <style name="txt76_blue28" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_28px</item>
+    </style>
+
+    <style name="txt77_blue26" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+
+    <style name="txt78_blue24" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_24px</item>
+    </style>
+
+    <style name="txt79_blue22" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt80_blue20" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt81_blue18" parent="txt_blue">
+        <item name="android:textSize">@dimen/font_18px</item>
+    </style>
+
+    <style name="txt82_red36" parent="txt_red">
+        <item name="android:textSize">@dimen/font_36px</item>
+    </style>
+
+    <style name="txt83_black30" parent="txt_black">
+        <item name="android:textSize">@dimen/font_30px</item>
+    </style>
+
+    <style name="txt84_black44" parent="txt_black">
+        <item name="android:textSize">@dimen/font_44px</item>
+    </style>
+
+    <style name="txt_orange">
+        <item name="android:textColor">@color/font_orange</item>
+    </style>
+
+    <style name="txt85_orange" parent="txt_orange">
+        <item name="android:textSize">@dimen/font_20px</item>
+    </style>
+
+    <style name="txt86_orange" parent="txt_orange">
+        <item name="android:textSize">@dimen/font_22px</item>
+    </style>
+
+    <style name="txt_orange2">
+        <item name="android:textColor">@color/font_orange2</item>
+    </style>
+
+    <style name="txt26_orange2" parent="txt_orange2">
+        <item name="android:textSize">@dimen/font_26px</item>
+    </style>
+</resources>

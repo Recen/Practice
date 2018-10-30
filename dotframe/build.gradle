@@ -27,5 +27,5 @@ dependencies {
     implementation project(':dotutil')
 
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
+    api "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
 }

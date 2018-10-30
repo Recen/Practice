@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btn9_78_black">
+        <item name="android:textSize">@dimen/font_28px</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+    </style>
+</resources>
