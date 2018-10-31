@@ -24,8 +24,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':dotframe')
     implementation project(':dotnetwork')
-    implementation project(':dotutil')
     implementation project(':dotui')
+    implementation project(':dotutil')
+    implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'

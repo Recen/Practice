@@ -9,7 +9,8 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.recen.dotui.R;
+import com.recen.learn.R;
+
 
 public class TitleBar extends RelativeLayout {
     private TextView mTitleView;

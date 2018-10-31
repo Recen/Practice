@@ -7,4 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="McTitleBarStyle">
+        <item name="android:background">@color/title_bar_background</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="mcTitleTextColor">@color/font_black</item>
+        <item name="mcLeftButtonImage">@drawable/icon_box_topbar_back</item>
+        <item name="mcRightViewBackground">@null</item>
+    </style>
 </resources>

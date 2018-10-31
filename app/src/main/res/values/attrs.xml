@@ -9,4 +9,16 @@
         <attr name="leftButtonText" format="string"/>
         <attr name="titleDrawableRight" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="McTitleBar">
+        <attr name="android:background"/>
+        <attr name="android:textColor"/>
+        <attr name="mcTitleTextColor" format="color"/>
+        <attr name="mcRightViewBackground" format="reference"/>
+        <attr name="mcLeftButtonImage" format="reference" />
+        <attr name="mcLeftButtonText" format="string" />
+        <attr name="mcTitleText" format="string" />
+        <attr name="mcRightButtonText" format="string" />
+        <attr name="mcLayoutResourceId" format="string" />
+    </declare-styleable>
 </resources>

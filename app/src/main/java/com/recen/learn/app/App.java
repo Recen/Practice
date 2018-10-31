@@ -7,5 +7,6 @@ public class App extends CommonApp {
     @Override
     public void onCreate() {
         super.onCreate();
+
     }
 }

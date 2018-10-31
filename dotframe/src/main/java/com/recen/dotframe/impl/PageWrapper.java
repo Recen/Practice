@@ -1,11 +1,13 @@
 package com.recen.dotframe.impl;
 
+import com.recen.dotframe.base.CommonBaseRepository;
 import com.recen.dotframe.base.CommonBaseViewModel;
 import com.recen.dotframe.interfaces.IPage;
+import com.recen.dotutil.DUtil;
 
-public abstract class PageWrapper extends CommonBaseViewModel{
+public abstract class PageWrapper<T extends CommonBaseRepository> extends CommonBaseViewModel{
     protected IPage page;
-
+    T mRepository;
     public PageWrapper(){
     }
 
@@ -20,11 +22,13 @@ public abstract class PageWrapper extends CommonBaseViewModel{
 
     public void init(IPage page) {
         this.page = page;
+        mRepository = DUtil.getNewInstance(this,0);
         initData();
     }
 
     @Override
     protected void onCleared() {
         super.onCleared();
+        mRepository.unSubscribe();
     }
 }
