@@ -7,7 +7,7 @@ import com.recen.dotutil.DUtil;
 
 public abstract class PageWrapper<T extends CommonBaseRepository> extends CommonBaseViewModel{
     protected IPage page;
-    T mRepository;
+    protected T mRepository;
     public PageWrapper(){
     }
 

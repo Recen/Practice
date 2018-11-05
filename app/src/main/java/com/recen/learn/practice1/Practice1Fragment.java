@@ -28,7 +28,6 @@ public class Practice1Fragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         FragmentPractice1Binding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_practice1,container,false);
-
         Practice1 practice1 = ViewModelProviders.of(this).get(Practice1.class);
         practice1.init(new AbstractPageImpl(this) {
             @Override
