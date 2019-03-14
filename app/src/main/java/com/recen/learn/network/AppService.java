@@ -1,5 +1,6 @@
 package com.recen.learn.network;
 
+import com.recen.learn.model.ReadData;
 import com.recen.learn.model.TopSearchData;
 
 import java.util.List;
@@ -17,8 +18,8 @@ public interface AppService {
      * @return 热门搜索数据
      */
 
-    @GET("hotkey/json")
+    @GET("xiandu/data/id/appinn/count/{pageNum}/page/{pageIndex}")
     @Headers("Cache-Control: public, max-age=36000")
-    Observable<BaseResponse<List<TopSearchData>>> getTopSearchData();
+    Observable<BaseResponse<List<ReadData>>> getXianDuData(@Path("pageNum") int pageNum,@Path("pageIndex") int pageIndex);
 
 }

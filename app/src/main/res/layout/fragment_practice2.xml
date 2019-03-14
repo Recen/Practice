@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="practice"
+            type="com.recen.learn.practice2.Practice2" />
+
+        <variable
+            name="pageManager"
+            type="com.recen.learn.common.util.PageManager" />
+
+        <variable
+            name="itemView"
+            type="me.tatarka.bindingcollectionadapter2.OnItemBind" />
+
+        <import type="android.support.v7.widget.LinearLayoutManager" />
+        <import type="com.recen.learn.R"/>
+        <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.recen.learn.common.widget.TitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftButtonClickListener="@{practice.finish}"
+            app:title="Practice2" />
+
+        <com.recen.dotui.view.LoadingLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:loadingView="@{R.layout.loading}"
+            app:noNetworkView="@{R.layout.nodata}"
+            app:pageManager="@{pageManager}">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F3F4F5"
+                app:pageManager="@{pageManager}">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/homeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/titleBar"
+                    app:itemBinding="@{itemView}"
+                    app:items="@{practice.dataList}"
+                    app:layoutManager="@{LayoutManagers.linear(LinearLayoutManager.VERTICAL, false)}" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </com.recen.dotui.view.LoadingLayout>
+
+    </RelativeLayout>
+</layout>

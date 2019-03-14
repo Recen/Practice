@@ -3,6 +3,16 @@
     package="com.recen.learn">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
 
     <application
         android:name=".app.App"
@@ -23,6 +33,17 @@
             android:name=".common.activity.GenericFragmentActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
+        <service android:name=".practice4.MyForeGroundService"/>
+        <service android:name=".download.download.DownloadService" />
+        <provider
+            android:name=".download.download.AppUpdateFileProvider"
+            android:authorities="${applicationId}.provider.appupdatefileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path"/>
+        </provider>
     </application>
 
 </manifest>

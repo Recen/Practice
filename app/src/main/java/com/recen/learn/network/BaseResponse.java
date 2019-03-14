@@ -8,34 +8,24 @@ public class BaseResponse<T> {
     /**
      * 0：成功，1：失败
      */
-    private int errorCode;
+    private String error;
 
-    private String errorMsg;
 
-    private T data;
+    private T results;
 
-    public int getErrorCode() {
-        return errorCode;
+    public String getError() {
+        return error;
     }
 
-    public void setErrorCode(int errorCode) {
-        this.errorCode = errorCode;
+    public void setError(String error) {
+        this.error = error;
     }
 
-    public String getErrorMsg() {
-        return errorMsg;
+    public T getResults() {
+        return results;
     }
 
-    public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
+    public void setResults(T result) {
+        this.results = result;
     }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
 }

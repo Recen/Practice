@@ -5,7 +5,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkManager {
-    private String baseUrl = "http://www.wanandroid.com/";
+    private String baseUrl = " http://gank.io/api/";
     private Retrofit retrofit;
     private static final class Generator {
         private static final NetworkManager INSTANCE = new NetworkManager();

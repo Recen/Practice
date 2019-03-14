@@ -1,28 +1,60 @@
 package com.recen.dotframe.base;
 
 import android.arch.lifecycle.ViewModel;
+import android.databinding.Bindable;
 import android.databinding.Observable;
 import android.databinding.PropertyChangeRegistry;
+import android.support.annotation.NonNull;
 
 public class CommonBaseViewModel extends ViewModel implements Observable {
 
-    private PropertyChangeRegistry callbacks = new PropertyChangeRegistry();
+    private transient PropertyChangeRegistry mCallbacks;
 
     @Override
-    public void addOnPropertyChangedCallback(OnPropertyChangedCallback callback) {
-        callbacks.add(callback);
+    public void addOnPropertyChangedCallback(@NonNull OnPropertyChangedCallback callback) {
+        synchronized (this) {
+            if (mCallbacks == null) {
+                mCallbacks = new PropertyChangeRegistry();
+            }
+        }
+        mCallbacks.add(callback);
     }
 
     @Override
-    public void removeOnPropertyChangedCallback(OnPropertyChangedCallback callback) {
-        callbacks.remove(callback);
+    public void removeOnPropertyChangedCallback(@NonNull OnPropertyChangedCallback callback) {
+        synchronized (this) {
+            if (mCallbacks == null) {
+                return;
+            }
+        }
+        mCallbacks.remove(callback);
     }
 
-    public void notifyChanged(){
-        callbacks.notifyCallbacks(this, 0, null);
+    /**
+     * Notifies listeners that all properties of this instance have changed.
+     */
+    public void notifyChange() {
+        synchronized (this) {
+            if (mCallbacks == null) {
+                return;
+            }
+        }
+        mCallbacks.notifyCallbacks(this, 0, null);
     }
 
-    public void notifyPropertyChanged(int fieldId){
-        callbacks.notifyCallbacks(this, fieldId, null);
+    /**
+     * Notifies listeners that a specific property has changed. The getter for the property
+     * that changes should be marked with {@link Bindable} to generate a field in
+     * <code>BR</code> to be used as <code>fieldId</code>.
+     *
+     * @param fieldId The generated BR id for the Bindable field.
+     */
+    public void notifyPropertyChanged(int fieldId) {
+        synchronized (this) {
+            if (mCallbacks == null) {
+                return;
+            }
+        }
+        mCallbacks.notifyCallbacks(this, fieldId, null);
     }
 }

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AndroidPractice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="labels">
+        <item>一档</item>
+        <item>二档</item>
+        <item>三档</item>
+        <item>四档</item>
+        <item>五档</item>
+    </string-array>
 </resources>

@@ -12,6 +12,9 @@ import com.recen.learn.base.BaseActivity;
 import com.recen.learn.common.PageName;
 import com.recen.learn.databinding.ActivityMainBinding;
 import com.recen.learn.practice1.Practice1Fragment;
+import com.recen.learn.practice2.Practice2Fragment;
+import com.recen.learn.practice3.Practice3Fragment;
+import com.recen.learn.practice4.Practice4Fragment;
 
 import me.tatarka.bindingcollectionadapter2.ItemBinding;
 import me.tatarka.bindingcollectionadapter2.OnItemBind;
@@ -29,14 +32,19 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+
         Main main = ViewModelProviders.of(this).get(Main.class);
         main.init(new AbstractPageImpl(this) {
             @Override
             protected void goPage(String pageName, Object params, ICallback callback) {
-                switch (pageName){
-                    case PageName.Practice1Fragment:
-                        Practice1Fragment.go(wrActivity.get(),(String)params);
-                        break;
+                if (PageName.Practice1Fragment.equals(pageName)){
+                    Practice1Fragment.go(wrActivity.get(),(String)params);
+                }else if (PageName.Practice2Fragment.equals(pageName)){
+                    Practice2Fragment.go(wrActivity.get(),(String)params);
+                }else if (PageName.Practice3Fragment.equals(pageName)){
+                    Practice3Fragment.go(wrActivity.get(),(String)params);
+                }else if (PageName.Practice4Fragment.equals(pageName)){
+                    Practice4Fragment.go(wrActivity.get(),(String)params);
                 }
             }
         });

@@ -1,0 +1,4 @@
+<resources>
+    <string name="mc_app_update">正在下载</string>
+    <string name="mc_app_update_cancel">取消</string>
+</resources>

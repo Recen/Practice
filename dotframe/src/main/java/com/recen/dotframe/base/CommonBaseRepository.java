@@ -1,9 +1,11 @@
 package com.recen.dotframe.base;
 
+import android.databinding.BaseObservable;
+
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
-public class CommonBaseRepository {
+public class CommonBaseRepository extends BaseObservable {
 
     private CompositeDisposable compositeDisposable;
 
